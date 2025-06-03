@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+
+    <input type="text" id="task" placeholder="Enter a task">
+    <button onclick="kora()">create Task</button>
+    <ol id="list"></ol>
+<script>
+function kora(){
+    const input = document.getElementById('tast').value;
+    if(task === ''){
+        alert('please enter a task');
+        return;
+    }
+    const taskElement = document.createElement('li');
+    taskElement.textContent = task;
+    document.getElementById('TaskList').appendChild(taskElement);
+    document.getElementById('task');
+}
+let marks
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>  CAT Pole Counter App</h1>
+    <img src="hand-sign-6135513_1280.webp" alt="img" id="cat" width="200px">
+    <p id="result">The CAT Counter is</p>
+    <h4>Helllo i'm H4</h4>
+    <h4>Helllo i'm H5</h4>
+    <button onclick="changeH4()">Change H4s</button>
+    <script>
+        const changeH4 = ()=>document.querySelectorAll('H4').forEach(h4=>h4.innerHTML="I'm Changed H4")
+        const cat = document.getElementById('cat');
+        const result = document.getElementById('result');
+        let i=0;
+
+        const cat = document.getElementById('cat');
+        const result = document.getElementById('result');
+        let i=0;
+        cat.addEventListener('click',()=>
+    {
+        i++;
+        result.innerHTML='The CAT Counter is ${i}';
+    })
+    </script>
+</body>
+</html>

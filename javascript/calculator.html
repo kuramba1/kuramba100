@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u><h1>Mini Calculator</h1></u>
+    <input type="number" id="num1" placeholder="First number" /><br>
+    <input type="number" id="num2" placeholder="Second number" /><br>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('+')">+</button>
+<p id="result"></p>
+<script> 
+    function calculate(operator){
+        const num1 = parseFloat((document.getElementById('num1').Value));
+        const num2 = parseFloat((document.getElementById('num2').Value));
+    let total = 0;
+        if(operator === '*'){
+            total = a * b ;
+        }
+     else if(operator === '/'){
+            total = a / b ;
+        }else if(operator === '-'){
+            total = a - b ;
+        }else if(operator === '+'){
+            total = a + b ;
+        }
+ }
+ document.getElementById('result').textContent ='Result:'${total};
+</script>
+</body>
+</html>
